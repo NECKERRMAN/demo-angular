@@ -5,11 +5,14 @@ import { SecondComponent } from './second/second.component'
 import { WishComponent } from './wish/wish.component'
 import { ContactComponent } from './contact/contact.component'
 import { NotFoundComponent } from './not-found/not-found.component'
+import { ProductslistComponent } from './products/productslist/productslist.component'
+import { ProductdetailsComponent } from './products/productdetails/productdetails.component'
 
 const routes: Routes = [
     /* Route order is important! */
     { path: '', component: WishComponent },
-    { path: 'first', component: FirstComponent },
+    { path: 'products', component: ProductslistComponent },
+    { path: 'products/:id', component: ProductdetailsComponent },
     { path: 'wish', component: WishComponent },
     { path: 'contact', component: ContactComponent },
     { path: '**', component: NotFoundComponent },
